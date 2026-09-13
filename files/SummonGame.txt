@@ -1,0 +1,1 @@
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Catburger009123/SUMMON-GAME-Script/refs/heads/main/Summon%20Game%20Script.lua"))()
