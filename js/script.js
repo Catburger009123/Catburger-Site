@@ -41,6 +41,65 @@ function renderProjects() {
 }
 
 // ================================
+// LOCALIZATION MECHANICS
+// ================================
+
+let currentLang = localStorage.getItem("site_lang") || "en";
+
+function updateTosDownloadLink(lang) {
+    const tosBtn = document.getElementById("downloadTosBtn");
+    if (!tosBtn) return;
+
+    const fileName = lang === "ru" ? "Terms of Service RU.txt" : "Terms of Service EN.txt";
+    tosBtn.setAttribute("href", fileName);
+    tosBtn.setAttribute("download", fileName);
+}
+
+function setLanguage(lang) {
+    if (typeof translations === "undefined" || !translations[lang]) {
+        console.error("Translations dictionary missing or invalid lang:", lang);
+        return;
+    }
+
+    currentLang = lang;
+    localStorage.setItem("site_lang", lang);
+
+    // Переводим все статичные элементы с атрибутом data-i18n
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key] !== undefined) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+
+    // Переключаем активную подсветку у кнопок языка
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
+
+    // Обновляем ссылку на файл TOS
+    updateTosDownloadLink(lang);
+
+    // Перерисовываем динамические галереи/проекты, если для них есть функции
+    if (typeof renderFeatured === "function") renderFeatured();
+    if (typeof renderGallery === "function") renderGallery();
+    if (typeof renderProjects === "function") renderProjects();
+}
+
+// Привязываем клики к кнопкам переключателя языка
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            setLanguage(btn.dataset.lang);
+        });
+    });
+
+    // Автоматический запуск при загрузке страницы
+    setLanguage(currentLang);
+});
+
+
+// ================================
 // PAGE NAVIGATION
 // ================================
 
@@ -52,7 +111,7 @@ function switchPage(pageName) {
     // Скрываем все страницы
     pages.forEach(page => page.classList.remove("active"));
     
-    // Показываем нужную страницу (добавляем префикс "page-")
+    // Показываем нужную страницу
     const targetPage = document.getElementById(`page-${pageName}`);
     if (targetPage) {
         targetPage.classList.add("active");
@@ -99,12 +158,11 @@ function renderFeatured() {
 
     featuredGrid.innerHTML = "";
     
-    // Берем 3 последних арта из массива и ставим самый свежий на первое место
     const recent = artworks.slice(-3).reverse();
 
     recent.forEach(artwork => {
         const item = document.createElement("div");
-        item.className = "featured-item art-card"; // Добавили art-card для единого стиля
+        item.className = "featured-item art-card";
         
         item.innerHTML = `
             <img 
@@ -128,7 +186,6 @@ function renderFeatured() {
             }
         `;
 
-        // Открытие модального окна при клике
         item.addEventListener("click", (e) => {
             if (e.target.classList.contains("reveal-button")) {
                 e.stopPropagation();
@@ -162,10 +219,8 @@ function renderGallery(filterCategory = "all") {
         : artworks.filter(item => {
             if (targetFilter === "nsfw") return item.nsfw;
 
-            // Проверка категории
             const matchCategory = item.category && item.category.toLowerCase() === targetFilter;
 
-            // Проверка по тегам
             const matchTags = item.tags && item.tags.some(tag => {
                 const normalizedTag = tag.toLowerCase().replace(/\s+/g, '');
                 const normalizedFilter = targetFilter.replace(/\s+/g, '');
@@ -211,7 +266,6 @@ function renderGallery(filterCategory = "all") {
             </div>
         `;
 
-        // Открытие модального окна при клике
         card.addEventListener("click", (e) => {
             if (e.target.classList.contains("reveal-button")) {
                 e.stopPropagation();
@@ -310,5 +364,5 @@ if (modalBackdrop) modalBackdrop.addEventListener("click", closeModal);
 document.addEventListener("DOMContentLoaded", () => {
     renderFeatured();
     renderGallery();
-    renderProjects(); // <-- Добавили вызов
+    renderProjects();
 });

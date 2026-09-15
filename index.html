@@ -45,54 +45,60 @@
             <div class="site-logo">
                 <div class="logo-symbol"> <img src="images/catburgerspinin.gif" width="70" height="70"> </div>
                 <div class="logo-name">Catburger</div>
-                <div class="logo-subtitle">digital art garden</div>
+                <div class="logo-subtitle" data-i18n="sidebar.subtitle">digital art garden</div>
             </div>
 
             <!-- Navigation -->
-            <div class="sidebar-label">NAVIGATION</div>
+            <div class="sidebar-label" data-i18n="sidebar.navLabel">NAVIGATION</div>
 
             <nav class="navigation">
                 <button class="nav-button active" data-page="home">
-                    <span>Home</span>
+                    <span data-i18n="nav.home">Home</span>
                 </button>
 
                 <button class="nav-button" data-page="gallery">
-                    <span>Gallery</span>
+                    <span data-i18n="nav.gallery">Gallery</span>
                 </button>
 
                 <button class="nav-button" data-page="about">
                     <span>♡</span>
-                    <span>About me</span>
+                    <span data-i18n="nav.about">About me</span>
                 </button>
 
                 <button class="nav-button" data-page="archive">
-                    <span>Archive</span>
+                    <span data-i18n="nav.archive">Archive</span>
                 </button>
 
                 <button class="nav-button" data-page="links">
-                    <span>Links</span>
+                    <span data-i18n="nav.links">Links</span>
                 </button>
             </nav>
+
+            <!-- Переключатель языков -->
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
 
             <!-- Status -->
             <div class="status-box">
                 <div class="status-line">
                     <span class="online-dot"></span>
-                    <span>
+                    <span data-i18n="status.desync">
                        System Time Desync
                     </span>
                 </div>
 
                 <div class="status-small">
-                    last update:
+                    <span data-i18n="status.lastUpdate">last update:</span>
                     <span id="lastUpdate">1900.01.01</span>
                 </div>
             </div>
 
             <!-- Tiny footer -->
             <div class="sidebar-footer">
-                <div>made with ♡</div>
-                <div>hopes and dreams</div>
+                <div data-i18n="footer.madeWith">made with ♡</div>
+                <div data-i18n="footer.hopes">hopes and dreams</div>
             </div>
 
         </aside>
@@ -112,11 +118,11 @@
  
                 <div class="hero aero-window">
                     <div class="hero-content">
-                        <div class="eyebrow">Welcome to a piece of me ★</div>
+                        <div class="eyebrow" data-i18n="home.eyebrow">Welcome to a piece of me ★</div>
 
-                        <h1>Hewwoo, It's <span>Catburger ^~^ </span></h1>
+                        <h1><span data-i18n="home.titlePre">Hewwoo, It's </span> <span>Catburger ^~^ </span></h1>
 
-                        <p class="hero-description">
+                        <p class="hero-description" data-i18n="home.desc">
                             Digital artist, realist at heart. 
                             I’m easy to adapt to others, provided it works out fairly for both sides.
                             <br>
@@ -125,8 +131,8 @@
                         </p>
 
                         <div class="hero-buttons">
-                            <button class="aero-button" data-go-page="gallery">✦ Enter gallery</button>
-                            <button class="aero-button secondary" data-go-page="about">About me →</button>
+                            <button class="aero-button" data-go-page="gallery" data-i18n="home.btnGallery">✦ Enter gallery</button>
+                            <button class="aero-button secondary" data-go-page="about" data-i18n="home.btnAbout">About me →</button>
                         </div>
                     </div>
 
@@ -151,24 +157,22 @@
                     <div class="window-content">
                         <div class="section-heading">
                             <div>
-                                <span class="tiny-label">NEWS</span>
-                                <h2>Little update ✧</h2>
+                                <span class="tiny-label" data-i18n="news.label">NEWS</span>
+                                <h2 data-i18n="news.title">Little update ✧</h2>
                             </div>
-                            <span class="date">14 / 09 / 2026</span>
+                            <span class="date">15 / 09 / 2026</span>
                         </div>
 
-                        <p>
-                            <strong> The Site is Live! </strong>
+                        <p data-i18n="news.content">
+                            <strong> Я очень рад, я депутат, послушный верный солдат </strong>
                             <br><br>
-                            The domain has been purchased, all info has been written, and the gallery has been updated
+                            Добавлена русская локализация
                             <br><br>
                             <strong> Planned for the future: </strong> 
                             <br>
                             - Replace emojis with custom icons 
                             <br>
-                            - Добавить русскую локализацию
-
-
+                            - Add more themes
                         </p>
                     </div>
                 </div>
@@ -188,11 +192,11 @@
                     <div class="window-content">
                         <div class="section-heading">
                             <div>
-                                <span class="tiny-label">FROM THE GARDEN</span>
-                                <h2>Recent work 🌷</h2>
+                                <span class="tiny-label" data-i18n="featured.label">FROM THE GARDEN</span>
+                                <h2 data-i18n="featured.title">Recent work 🌷</h2>
                             </div>
 
-                            <button class="text-button" data-go-page="gallery">
+                            <button class="text-button" data-go-page="gallery" data-i18n="featured.viewAll">
                                 view all →
                             </button>
                         </div>
@@ -224,26 +228,26 @@
                     <div class="window-content">
                         <div class="gallery-heading">
                             <div>
-                                <span class="tiny-label">ART ARCHIVE</span>
-                                <h1>Art Garden 🌸</h1>
-                                <p>browse my collection</p>
+                                <span class="tiny-label" data-i18n="gallery.label">ART ARCHIVE</span>
+                                <h1 data-i18n="gallery.title">Art Garden 🌸</h1>
+                                <p data-i18n="gallery.subtitle">browse my collection</p>
                             </div>
                         </div>
 
                         <!-- Filters -->
                         <div class="gallery-toolbar">
                             <div class="filter-buttons">
-                                <button class="filter-button active" data-filter="all">All</button>
-                                <button class="filter-button" data-filter="nsfw">NSFW</button>
-                                <button class="filter-button" data-filter="2026">New Era Arts</button>
-                                <button class="filter-button" data-filter="illustration">Illustrations</button>
-                                <button class="filter-button" data-filter="character">Characters</button>
+                                <button class="filter-button active" data-filter="all" data-i18n="filter.all">All</button>
+                                <button class="filter-button" data-filter="nsfw" data-i18n="filter.nsfw">NSFW</button>
+                                <button class="filter-button" data-filter="2026" data-i18n="filter.newEra">New Era Arts</button>
+                                <button class="filter-button" data-filter="illustration" data-i18n="filter.illustrations">Illustrations</button>
+                                <button class="filter-button" data-filter="character" data-i18n="filter.characters">Characters</button>
                                 <button class="filter-button" data-filter="GarticPhone">GarticPhone</button>
                                 <button class="filter-button" data-filter="Ultrakill">Ultrakill</button>
                             </div>
 
                             <div class="art-counter">
-                                <span id="artCount">0</span> works
+                                <span id="artCount">0</span> <span data-i18n="gallery.counter">works</span>
                             </div>
                         </div>
 
@@ -281,43 +285,42 @@
 
                             <!-- About Text -->
                             <div class="about-text">
-                                <span class="tiny-label">USER PROFILE</span>
-                                <h1>About me</h1>
+                                <span class="tiny-label" data-i18n="about.label">USER PROFILE</span>
+                                <h1 data-i18n="about.title">About me</h1>
 
-                                <p>
+                                <p data-i18n="about.p1">
                                     Hey, I'm <strong>Catburger [or Mx. CallMeWhateverYouLike]</strong>.
                                     I'm an artist... and honestly, what else is there to say? I'm a creative type, and put me in the right environment, 
                                     I'll pull off pretty much anything, no matter how tough it gets.
                                 </p>
 
-                                <p>
+                                <p data-i18n="about.p2">
                                     I'm definitely a bit of a loner my first instinct is always to figure stuff out on my own but again, 
                                     it all comes down to having the right surroundings. I’m not super confident in myself, 
                                     though, and I usually end up feeling like my achievements are either blown out of proportion or totally undeserved.
+                                </p>
 
-                                <p> 
+                                <p data-i18n="about.p3"> 
                                     Oh, and I'm also kind of a <strong>boring, uninteresting asshole.</strong> Even though I’m slowly getting over that mindset and my 
                                     tastes keep evolving over time... games like Pony Torture or Hatred will always have a special spot in my library.
-                                    
-                                
                                 </p>    
 
-                                <p>
-                                <strong>И да, не стесняйтесь обращатся ко мне на русском языке.</strong>
+                                <p data-i18n="about.p4">
+                                    <strong>И да, не стесняйтесь обращатся ко мне на русском языке.</strong>
                                 </p>
 
                                 <div class="tag-list">
-                                    <span>🎨 digital art</span>
-                                    <span>🐈 sfw</span>
-                                    <span>🔞 nsfw </span>
-                                    <span>✨ character design</span>
+                                    <span data-i18n="tag.digital">🎨 digital art</span>
+                                    <span data-i18n="tag.sfw">🐈 sfw</span>
+                                    <span data-i18n="tag.nsfw">🔞 nsfw </span>
+                                    <span data-i18n="tag.character">✨ character design</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Skills -->
+                <!-- Skills & Commissions -->
                 <div class="aero-window content-window">
                     <div class="window-titlebar">
                         <div class="window-controls">
@@ -329,75 +332,68 @@
                     </div>
 
                     <div class="window-content">
-                        <h2>Things I do ✦ Commission Info</h2>
+                        <div class="skills-header">
+                            <h2 data-i18n="skills.title">Информация о коммишках ✦ внимание, прайс-лист является <strong> примерной заготовкой </strong>, я не буду брать по фулл прайсу, а цена пока что договорная</h2>
+                            
+                            <a id="downloadTosBtn" class="aero-button tos-button" href="Terms of Service EN.txt" download="Terms of Service EN.txt" data-i18n="skills.downloadTos">
+                                📄 Скачать Пользовательское Соглашение (Terms of Service) [.txt]
+                            </a>
+                        </div>
 
+                        <!-- Сетка с 4 столбцами -->
                         <div class="skill-grid">
                             <div class="skill-card">
-                                🎨 <strong>Technical Info</strong>
+                                🎨 <strong data-i18n="skills.techTitle">Техническая инфа</strong>
                                     
                                 <p> 
                                     <hr>
-                                    1. I try to prioritize work wisely. I don't see a difference between a simple request like 
-                                    "draw this character in this pose" and a complex one with every tiny detail spelled out. 
-                                    I'll pick the commission I know I can execute better and faster without wasting time, or 
-                                    simply whichever one is earlier in line. <br />
+                                    <span data-i18n="skills.tech1">1. Я стараюсь грамотно расставлять приоритеты. Я не увижу разницы между простым запросом вроде "нарисуй этого персонажа в этой позе" и сложным, где расписана каждая мелочь. Я выберу тот заказ, который смогу сделать лучше и быстрее, или просто тот, что раньше в очереди.</span> <br />
                                     <hr>
-                                    2. Prices may vary depending on whether details are added or removed. <br />
+                                    <span data-i18n="skills.tech2">2. Цены могут варьироваться в зависимости от добавления или удаления деталей.</span> <br />
                                     <hr>
-                                    3. Keep in mind that I'm not a pro with 10 years of experience. My skill level can also affect the pricing to some extent. <br />
+                                    <span data-i18n="skills.tech3">3. Учитывайте, что я не про-художник с 10-летним стажем. Мой скилл также может в каком то смысле влиять на цены.</span> <br />
                                     <hr>
-                                    4. Don't be shy to talk to me! We can easily negotiate a small discount, or talk about fixing and adding details to the final drawing/sketch.
-                                
+                                    <span data-i18n="skills.tech4">4. Не стесняйтесь писать мне! Мы легко можем договориться о небольшой скидке или обсудить правки и добавление деталей в финальный арт/скетч.</span>
                                 </p>
                             </div>
+
                             <div class="skill-card">
-                                ⛔ <strong>What I STERNLY refuse to draw</strong>
+                                ⛔ <strong data-i18n="skills.refuseTitle">Что я КОТЕГОРИЧЕСКИ откажусь рисовать</strong>
                                 <p>
                                     <hr>
-                                    1. Underage NSFW: Strictly SFW only for underage characters, or I won't draw them at all. <br>
+                                    <span data-i18n="skills.refuse1">1. NSFW с несовершеннолетними: Для несовершеннолетних персонажей только SFW, либо я не буду рисовать их вообще.</span> <br>
                                     <hr>
-                                    2. Death: Self-harm is fine. But I will under no circumstances draw anyone hanging from a noose or with a knife in their tummy. <br>
+                                    <span data-i18n="skills.refuse2">2. Смерть: Селфхарм - ок. Но я ни при каких обстоятельствах не буду рисовать кого-либо в петле или с ножом в животе.</span> <br>
                                     <hr>
-                                    3. Gross / Explicit Fetishes: Farting, vomit, scat, etc. - that is definitely not my thing. <strong> (This doesn't apply to vanilla fetishes, like foot fetish or extra body hair, you know) </strong>
-                                    
+                                    <span data-i18n="skills.refuse3">3. Отвратительные / Явные фетиши: Пердёж, рвота, дерьмо и т.д. - чемодан, вокзал, нахер. <strong> (Это не относится к дефолтным фетишам, вроде футфетиша или дополнительной растительности на теле, типа.) </strong></span>
                                 </p>
                             </div>
+
                             <div class="skill-card">
-                                💵 <strong>Price List</strong>
+                                💵 <strong data-i18n="skills.priceTitle">Прайс лист</strong>
                                 <p> 
                                     <hr>
-                                    Icon / Avatar <br>
-                                    Lineart / Flat Color: $5–10 <br>
-                                    Full Render: $10–20 <br>
-                                    Format: Bust-up (shoulder-up). Perfect for profile pictures on Discord, Telegram, or Twitter/X. <br>
+                                    <span data-i18n="skills.price1">Иконка / Аватарка <br>Лайн / Заливка: $5–10 <br>Полный рендер: $10–20 <br>Формат: По грудь (Bust-up). Отлично подходит для аватарок в Discord, Telegram или Twitter/X.</span> <br>
                                     <hr>
-                                    Half Body <br>
-                                    Lineart / Flat Color: $20+ <br>
-                                    Full Render: $30–40 <br>
-                                    Format: Waist-up or thigh-up. Probably the most popular choice for commissions, I guess. <br>
+                                    <span data-i18n="skills.price2">По пояс / По бедра (Half Body) <br>Лайн / Заливка: $20+ <br>Полный рендер: $30–40 <br>Формат: По пояс или по бедра. Пожалуй, самый популярный выбор для заказов.</span> <br>
                                     <hr>
-                                    Full Body <br>
-                                    Lineart / Flat Color: $30+ <br>
-                                    Full Render: $35–50 <br>
-                                    Format: Full-height character with all the details.
+                                    <span data-i18n="skills.price3">Полный рост (Full Body) <br>Лайн / Заливка: $30+ <br>Полный рендер: $35–50 <br>Формат: Персонаж в полный рост со всеми деталями.</span>
                                 </p>
                             </div>
+
                             <div class="skill-card">
-                                ✏️ <strong>Add-ons / Extras</strong>
+                                ✏️ <strong data-i18n="skills.extraTitle">Допы / Экстра</strong>
                                 <p>
                                     <hr>
-                                NSFW version: +$5–10 (I won't charge much extra just for drawing a character naked) <br>
-                                <hr>
-                                Additional character: +$20–35 (depends on the chosen format, detail complexity, etc.) <br>
-                                <hr>
-                                Simple / Gradient background: Free
-                                <hr>
-                               <i>Accepted Payment Methods</i> <br>
-
-                                USDT (TON network) <br>
-
-                                Ref, Mann Co. Keys, MvM Tickets (TF2) <br>
-
+                                    <span data-i18n="skills.extra1">NSFW версия: +$5–10 (я не беру много сверху просто за то, чтобы нарисовать персонажа голым)</span> <br>
+                                    <hr>
+                                    <span data-i18n="skills.extra2">Доп. персонаж: +$20–35 (зависит от формата, детализации и т.д.)</span> <br>
+                                    <hr>
+                                    <span data-i18n="skills.extra3">Простой / Градиентный фон: Бесплатно</span>
+                                    <hr>
+                                    <i data-i18n="skills.payMethods">Принимаемые способы оплаты</i> <br>
+                                    USDT (TON network) <br>
+                                    Ref, Mann Co. Keys, MvM Tickets (TF2) <br>
                                 </p>
                             </div>
                         </div>
@@ -426,9 +422,9 @@
                     <div class="window-content">
                         <div class="section-heading">
                             <div>
-                                <span class="tiny-label">PROJECTS & TOOLS</span>
-                                <h1>Software Archive 💾</h1>
-                                <p>Projects I vibe-coded and actually used/use myself. Atention, this section contains projects written specifically for me that do not have an English localization. </p>
+                                <span class="tiny-label" data-i18n="archive.label">PROJECTS & TOOLS</span>
+                                <h1 data-i18n="archive.title">Software Archive 💾</h1>
+                                <p data-i18n="archive.desc">Projects I vibe-coded and actually used/use myself. Atention, this section contains projects written specifically for me that do not have an English localization. </p>
                             </div>
                         </div>
 
@@ -457,8 +453,8 @@
                     </div>
 
                     <div class="window-content">
-                        <span class="tiny-label">ELSEWHERE</span>
-                        <h1>Find me elsewhere ✦</h1>
+                        <span class="tiny-label" data-i18n="links.label">ELSEWHERE</span>
+                        <h1 data-i18n="links.title">Find me elsewhere ✦</h1>
 
                         <div class="links-grid">
                             <a href="https://t.me/catburgerschannel" class="social-card" target="_blank">
@@ -467,7 +463,7 @@
                                 </span>
                                 <span>
                                     <strong>Telegram Channel [RU]</strong>
-                                    <i>just telegram channel, announcements and arts. <br>
+                                    <i data-i18n="links.tgDesc">just telegram channel, announcements and arts. <br>
                                         DM: @catburger0090 [RU\EN]</i>
                                 </span>
                                 <b>↗</b>
@@ -479,7 +475,7 @@
                                 </span>
                                 <span>
                                     <strong>Discord [RU\EN]</strong>
-                                    <i>Nickname: catburgerx <small>if you want to text me</small></i>
+                                    <i data-i18n="links.dsDesc">Nickname: catburgerx <small>if you want to text me</small></i>
                                 </span>
                             </div>
 
@@ -489,7 +485,7 @@
                                 </span>
                                 <span>
                                     <strong>Steam</strong>
-                                    <i>Steam account. Thats all.</i>
+                                    <i data-i18n="links.steamDesc">Steam account. Thats all.</i>
                                 </span>
                                 <b>↗</b>
                             </a>
@@ -549,7 +545,7 @@
     <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
-
+    <script src="js/translations.js"></script>
     <script src="js/artworks.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
