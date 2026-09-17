@@ -238,4 +238,12 @@ const artworks = [
         tags: ["digital", "character", "2026"],
         nsfw: true
     },
+
+                                                                                                                {
+        title: "So cute",
+        image: "images/sillydynka.webp",
+        description: "Apogee",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
 ];
