@@ -1,49 +1,42 @@
+Вот точный и естественно звучащий перевод для клиентских правил (Terms of Service / Terms of Use):
+
+(Short & simple info regarding refunds, deadlines, etc.)
+
 Terms of Service
+Payment
+The maximum price of $10 is already quite low. Full upfront payment is preferred, but a 50/50 split is also available if needed (50% before work starts, 50% after the final render, after which you will receive the full-res artwork without watermarks [if requested] and in high quality).
 
-Payment:
+Revisions
+You get 2 free revisions during the sketching stage, as it's easy to change the pose, expression, hairstyle, or outfit at this point.
 
-For orders under $30, full upfront payment is required.
+If you say, "I approved the sketch, but now at the final render stage I want to completely change the pose or character" — that is not a revision, that is a redesign/rework. Any major revision after the sketch approval will incur an extra fee.
 
-For orders over $30, payment is split 50/50: Once all details are confirmed, you send the first 50%. When the initial result is ready and you're happy with it, you send the remaining 50% to receive the high-res file without watermarks.
+Refunds
+If cancelled by ME (my fault):
 
-Revisions:
-
-You get 2 free revisions during the sketch stage, as it’s easy to change the pose, expression, hair, or outfit at this point.
-
-If you say, "I approved the sketch, but now at the final render stage I want to change the pose completely or swap the character"—that’s not a revision, that’s a redraw. Any major changes requested after the sketch is approved will cost an extra $10–20.
-
-Refund Policy
-
-If cancelled by ME:
-
-100% full refund at any time if I get sick, run out of time, or can't finish the art piece for any reason.
+100% full refund at any point if I get sick, run out of time, or am unable to finish the piece.
 
 If cancelled by the CLIENT:
 
-Before work begins (before the sketch stage): 100% refund, no questions asked.
+Before work begins (before sketching): 100% refund, no questions asked.
 
-During the sketch stage: 50% refund (since time was already spent on the initial draft).
+During the sketch stage: 50% refund (as time has already been spent on the draft).
 
-After sketch approval (lineart/render stage): 0% refund. My time and effort have already been put into the work.
+After sketch approval: 0% refund. My time and effort have already been put into the work.
 
-Turnaround Time
-
-I don't box myself into "done in 1 day" deadlines. The clock starts once I receive the upfront payment and all character references.
+Deadlines & Turnaround Time
+I do not lock myself into strict "done in 1 day" deadlines. The timeframe starts counting once prepayment/full payment and all character references are received.
 
 Standard TAT: 3–14 days (or faster, depending on the queue).
 
-Rush Orders: If you need it done urgently within 24 hours, a rush fee applies (e.g., +50% of the total price, but negotiable).
+Rush order ("Urgent / Within 24 hours"): +50% fee added to the total cost.
 
 Copyright & Usage
-
 Personal Use:
+The client is free to use the artwork as an avatar, post it on social media (with proper credit to me as the artist), or print it for personal items (e.g., phone cases, posters).
 
-You are free to use the art as a profile picture, post it on your social media (with proper credit to me as the artist), or print it for personal use (e.g., custom phone case or poster).
-
-Commercial Restrictions:
-
-You may NOT sell merch featuring this artwork, turn it into an NFT, or use it in commercial games/books without purchasing a separate Commercial License (which usually costs 2x–3x the base price, negotiated separately).
+Commercial Restriction:
+The client MAY NOT sell merchandise featuring the artwork, turn it into an NFT, or use it in commercial games/books without purchasing a separate Commercial License (a Commercial License usually costs 2x or 3x the base price).
 
 Artist Rights:
-
-I reserve the right to post the finished artwork in my portfolio and on my social media. If you want the artwork to remain private and hidden from public view, a ~$5 privacy fee applies.
+I reserve the right to post the finished artwork in my portfolio and on social media. If you would like the artwork to remain private and never be published anywhere, a privacy fee of ~$5 applies.
