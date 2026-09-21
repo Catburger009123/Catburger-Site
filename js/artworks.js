@@ -246,4 +246,12 @@ const artworks = [
         tags: ["digital", "character", "2026"],
         nsfw: false
     },
+
+                                                                                                                    {
+        title: "Scribbles humanisation",
+        image: "images/scribbles.webp",
+        description: "Zamnnn 👀",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
 ];
