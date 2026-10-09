@@ -146,6 +146,27 @@ document.addEventListener("click", (e) => {
     }
 });
 
+// ================================
+// NEWS MODAL MECHANICS
+// ================================
+
+const newsModal = document.getElementById("newsModal");
+const openNewsBtn = document.getElementById("openNewsBtn");
+const newsModalClose = document.getElementById("newsModalClose");
+const newsModalBackdrop = document.getElementById("newsModalBackdrop");
+
+function openNewsModal() {
+    if (newsModal) newsModal.classList.add("open");
+}
+
+function closeNewsModal() {
+    if (newsModal) newsModal.classList.remove("open");
+}
+
+if (openNewsBtn) openNewsBtn.addEventListener("click", openNewsModal);
+if (newsModalClose) newsModalClose.addEventListener("click", closeNewsModal);
+if (newsModalBackdrop) newsModalBackdrop.addEventListener("click", closeNewsModal);
+
 
 // ================================
 // FEATURED ARTWORKS (RECENT WORK)
@@ -237,7 +258,8 @@ function renderGallery(filterCategory = "all") {
         return;
     }
 
-    filtered.forEach((artwork) => {
+    // Разворачиваем массив .slice().reverse(), чтобы новые элементы из конца массива рендерились первыми
+    filtered.slice().reverse().forEach((artwork) => {
         const card = document.createElement("article");
         card.className = "art-card";
 
@@ -356,13 +378,56 @@ function closeModal() {
 if (modalClose) modalClose.addEventListener("click", closeModal);
 if (modalBackdrop) modalBackdrop.addEventListener("click", closeModal);
 
+// ================================
+// THEME & LANGUAGE MECHANICS
+// ================================
 
-// ================================
-// INIT
-// ================================
+let currentTheme = localStorage.getItem("site_theme") || "pink";
+
+function setTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem("site_theme", theme);
+    document.body.setAttribute("data-theme", theme);
+
+    // Обновляем активность кнопок в выпадушке
+    document.querySelectorAll(".theme-opt-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.theme === theme);
+    });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderFeatured();
-    renderGallery();
-    renderProjects();
+    // 1. Инициализация языка
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            setLanguage(btn.dataset.lang);
+        });
+    });
+    setLanguage(currentLang);
+
+    // 2. Инициализация темы
+    setTheme(currentTheme);
+
+    // Открытие/закрытие выпадающего меню тем
+    const themeToggleBtn = document.getElementById("themeToggleBtn");
+    const themeDropdown = document.getElementById("themeDropdown");
+
+    if (themeToggleBtn && themeDropdown) {
+        themeToggleBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            themeDropdown.classList.toggle("open");
+        });
+
+        // Клик по варианту темы
+        document.querySelectorAll(".theme-opt-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                setTheme(btn.dataset.theme);
+                themeDropdown.classList.remove("open");
+            });
+        });
+
+        // Закрываем меню при клике в любое другое место
+        document.addEventListener("click", () => {
+            themeDropdown.classList.remove("open");
+        });
+    }
 });

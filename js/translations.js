@@ -12,6 +12,8 @@ const translations = {
         "status.lastUpdate": "last update:",
         "footer.madeWith": "made with ♡",
         "footer.hopes": "hopes and dreams",
+        "theme.btn": "Темы [NEW]",
+        "nav.news": "Новости",
 
         // Главная (Home)
         "home.eyebrow": "Добро пожаловать на мою сторону интернета ★",
@@ -20,8 +22,8 @@ const translations = {
         "home.btnGallery": "✦ Войти в галерею",
         "home.btnAbout": "Обо мне →",
         "news.label": "НОВОСТИ",
-        "news.title": "Небольшое обновление ♡",
-        "news.content": "<strong>Я очень рад, я депутат, послушный верный солдат</strong><br><br>- Добавлен русский язык!<br><br><strong>Запланировано на будущее:</strong><br>- Заменить эмодзи кастомными иконками<br>- Добавить больше тем для сайта",
+    "news.title": "Апдейт визуала (🎃 HAPPY HALLOWEEN 🎃) ✧",
+"news.content": "<strong> Обновление боковой панели </strong><br><br>- Добавлено меню выбора тем (Pink Aero & Halloween)<br>- Добавлена кнопка вызова новостей [Новости]<br><br><strong> Общее обновление </strong><br><br>- Добавлены кастомные курсоры под каждую тему<br>- Новые арты в галерее теперь загружаются первыми<br>- Сохранение выбранной темы и языка<br>- Мелкие фиксы контраста текста и цензуры<br><br><strong> Запланированно на будущее: </strong><br>- Заменить смайлики на кастомные иконки<br>- Добавить больше тем",
         "featured.label": "GARDEN",
         "featured.title": "Свежие работы 🌷",
         "featured.viewAll": "посмотреть все →",
@@ -98,6 +100,8 @@ const translations = {
         "status.lastUpdate": "last update:",
         "footer.madeWith": "made with ♡",
         "footer.hopes": "hopes and dreams",
+        "theme.btn": "Themes [NEW]",
+        "nav.news": "News",
 
         // Home
         "home.eyebrow": "Welcome to a piece of me ★",
@@ -106,8 +110,8 @@ const translations = {
         "home.btnGallery": "✦ Enter gallery",
         "home.btnAbout": "About me →",
         "news.label": "NEWS",
-        "news.title": "Little update ♡",
-        "news.content": "<strong>I don't speak telegram</strong><br><br>- Added russian lang<br><br><strong>Planned for the future:</strong><br>- Replace emojis with custom icons<br>- Add more themes",
+        "news.title": "Visual Update (🎃 HAPPY HALLOWEEN 🎃) ✧",
+        "news.content": "<strong> Sidebar Update </strong><br><br>- Added theme selection menu (Pink Aero & Halloween)<br>- Added [News] button to navigation<br><br><strong> General Update </strong><br><br>- Added custom cursors for each theme<br>- New gallery artworks now load first<br>- Saved theme & language choices<br>- Text contrast & censor visual fixes<br><br><strong> Planned for the future: </strong><br>- Replace emojis with custom icons<br>- Add more themes",
         "featured.label": "FROM THE GARDEN",
         "featured.title": "Recent work 🌷",
         "featured.viewAll": "view all →",

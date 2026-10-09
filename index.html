@@ -74,10 +74,31 @@
                 </button>
             </nav>
 
+            <!-- Заметная кнопка открытия новостей -->
+                <button class="nav-button news-nav-btn" id="openNewsBtn">
+                    <span data-i18n="nav.news">NEWS</span>
+                </button>
+            </nav>
+
             <!-- Переключатель языков -->
             <div class="lang-switcher">
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
+
+            <!-- Переключатель тем нахуй, неожиданно да? я тоже вахуе что такое тут есть-->
+            <div class="theme-switcher">
+                <button class="theme-toggle-btn" id="themeToggleBtn">
+                    <span data-i18n="theme.btn">Themes [NEW]</span>
+                </button>
+                <div class="theme-dropdown" id="themeDropdown">
+                    <button class="theme-opt-btn active" data-theme="pink">
+                        Pink Aero
+                    </button>
+                    <button class="theme-opt-btn" data-theme="halloween">
+                        Halloween
+                    </button>
+                </div>
             </div>
 
             <!-- Status -->
@@ -168,41 +189,6 @@
 
                         <!-- Контейнер для трех последних работ -->
                         <div class="featured-grid" id="featuredGrid"></div>
-                    </div>
-                </div>
-
-
-                <!-- LATEST UPDATE -->
-                <div class="aero-window content-window">
-                    <div class="window-titlebar">
-                        <div class="window-controls">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <span>latest.exe</span>
-                    </div>
-
-                    <div class="window-content">
-                        <div class="section-heading">
-                            <div>
-                                <span class="tiny-label" data-i18n="news.label">NEWS</span>
-                                <h2 data-i18n="news.title">Little update ✧</h2>
-                            </div>
-                            <span class="date">15 / 09 / 2026</span>
-                        </div>
-
-                        <p data-i18n="news.content">
-                            <strong> Я очень рад, я депутат, послушный верный солдат </strong>
-                            <br><br>
-                            Добавлена русская локализация
-                            <br><br>
-                            <strong> Planned for the future: </strong> 
-                            <br>
-                            - Replace emojis with custom icons 
-                            <br>
-                            - Add more themes
-                        </p>
                     </div>
                 </div>
 
@@ -541,6 +527,60 @@
             </div>
         </div>
     </div>
+
+    <!-- =====================================================
+         NEWS MODAL
+    ====================================================== -->
+
+    <div class="modal" id="newsModal" aria-hidden="true">
+        <div class="modal-backdrop" id="newsModalBackdrop"></div>
+
+        <div class="news-modal aero-window content-window">
+            <div class="window-titlebar">
+                <div class="window-controls">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>latest.exe</span>
+                <button class="modal-close" id="newsModalClose">×</button>
+            </div>
+
+<div class="window-content">
+                <div class="section-heading">
+                    <div>
+                        <span class="tiny-label" data-i18n="news.label">NEWS</span>
+                        <h2 data-i18n="news.title">Апдейт визуала (🎃 HAPPY HALLOWEEN 🎃) ✧</h2>
+                    </div>
+                    <span class="date">09 / 10 / 2026</span>
+                </div>
+
+                <p data-i18n="news.content">
+                    <strong> Обновление боковой панели </strong>
+                    <br><br>
+                    - Добавлено меню выбора тем (Pink Aero & Halloween)
+                    <br>
+                    - Добавлена кнопка вызова новостей [NEWS]
+                    <br><br>
+                    <strong> Общее обновление </strong>
+                    <br><br>
+                    - Добавлены кастомные курсоры под каждую тему
+                    <br>
+                    - Новые арты в галерее теперь загружаются первыми
+                    <br>
+                    - Сохранение выбранной темы и языка
+                    <br>
+                    - Мелкие фиксы контраста текста и цензуры
+                    <br><br>
+                    <strong> Planned for the future: </strong>
+                    <br>
+                    - Replace emojis with custom icons
+                    <br>
+                    - Add more themes
+                    <br>
+                    - Перевести этот парт на русский
+                </p>
+            </div>
 
 
     <!-- =====================================================

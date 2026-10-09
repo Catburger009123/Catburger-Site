@@ -256,7 +256,7 @@ const artworks = [
     },
 
                                                                                                                         {
-        title: "ZIQL character design",
+        title: "Zimini | ZIQL's character design",
         image: "images/ZIQL1.webp",
         description: "My GOAT art.",
         tags: ["digital", "character", "2026"],
@@ -264,7 +264,7 @@ const artworks = [
     },
 
                                                                                                                             {
-        title: "ZIQL character design 2",
+        title: "Zimi | ZIQL's character design 2",
         image: "images/ZIQL2.webp",
         description: "Another GOATED art. another pose",
         tags: ["digital", "character", "2026"],
