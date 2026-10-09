@@ -254,4 +254,20 @@ const artworks = [
         tags: ["digital", "character", "2026"],
         nsfw: false
     },
+
+                                                                                                                        {
+        title: "ZIQL character design",
+        image: "images/ZIQL1.webp",
+        description: "My GOAT art.",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
+
+                                                                                                                            {
+        title: "ZIQL character design 2",
+        image: "images/ZIQL2.webp",
+        description: "Another GOATED art. another pose",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
 ];
