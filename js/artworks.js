@@ -273,7 +273,7 @@ const artworks = [
 
                                                                                                                                 {
         title: "Puff-Shroom humanisation design",
-        image: "images/Poof-Shroom.webp",
+        image: "images/Puff_Shroom.webp",
         description: "puff shroom is the best schroom in the game, change my mind.",
         tags: ["digital", "character", "2026"],
         nsfw: false
