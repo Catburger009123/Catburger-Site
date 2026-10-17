@@ -146,6 +146,7 @@ document.addEventListener("click", (e) => {
     }
 });
 
+
 // ================================
 // NEWS MODAL MECHANICS
 // ================================
