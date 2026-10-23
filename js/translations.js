@@ -83,7 +83,7 @@ const translations = {
         "archive.download": "💾 Скачать",
         "links.label": "ЗА ПРЕДЕЛАМИ САЙТА",
         "links.title": "<i>CATBURGER ТЫ ГДЕ??</i> Я в соцсетях прячусь! ✦",
-        "links.tgDesc": "просто телеграм канал, анонсы и арты.<br>ЛС: @catburger0090 [RU\\EN]",
+        "links.tgDesc": "просто телеграм канал, анонсы и арты.<br>",
         "links.dsDesc": "Никнейм: catburgerx <small>обкашлять вопросик лично</small>",
         "links.steamDesc": "Steam аккаунт. Вот и всё."
     },
@@ -171,7 +171,7 @@ const translations = {
         "archive.download": "💾 Download",
         "links.label": "ELSEWHERE",
         "links.title": "Find me elsewhere ✦",
-        "links.tgDesc": "just telegram channel, announcements and arts.<br>DM: @catburger0090 [RU\\EN]",
+        "links.tgDesc": "just telegram channel, announcements and arts.<br>",
         "links.dsDesc": "Nickname: catburgerx <small>if you want to text me</small>",
         "links.steamDesc": "Steam account. Thats all."
     }
