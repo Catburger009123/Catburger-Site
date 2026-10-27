@@ -278,4 +278,12 @@ const artworks = [
         tags: ["digital", "character", "2026"],
         nsfw: false
     },
+
+                                                                                                                                    {
+        title: "Apogee second art",
+        image: "images/Apogee2.webp",
+        description: "fskjdhfkwebfkjeshfidhviewfks",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
 ];
