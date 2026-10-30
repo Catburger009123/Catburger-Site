@@ -286,4 +286,12 @@ const artworks = [
         tags: ["digital", "character", "2026"],
         nsfw: false
     },
+
+                                                                                                                                        {
+        title: "Halloween art",
+        image: "images/halloween art.webp",
+        description: "happy halloween 🎃",
+        tags: ["digital", "character", "2026"],
+        nsfw: false
+    },
 ];
